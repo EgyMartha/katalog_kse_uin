@@ -14,6 +14,23 @@
             font-family: 'Poppins', sans-serif;
         }
     </style>
+    <style>
+  /* Menambahkan Animasi Kustom Shimmer ke CSS */
+  @layer utilities {
+    @keyframes text-shimmer {
+      0% {
+        background-position: 0% center;
+      }
+      100% {
+        background-position: -200% center;
+      }
+    }
+
+    .animate-text-shimmer {
+      animation: text-shimmer 3s ease-out infinite;
+    }
+  }
+</style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -23,21 +40,11 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <div class="w-10 h-10 bg-emerald-400 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                        O
-                    </div>
-                    <span class="font-bold text-2xl text-emerald-600">Nusantara Hijau</span>
+                    <img src="images/logouin.png" alt="Deskripsi Gambar" style="width: 100px; height: auto; float: left; margin-right: 15px;">
+                    <span class="font-bold text-2xl text-emerald-600">UIN Raden Intan Lampung</span>
                 </div>
-                <!-- Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-emerald-500 font-medium transition duration-300">Beranda</a>
-                    <a href="#tentang" class="text-gray-600 hover:text-emerald-500 font-medium transition duration-300">Tentang Kami</a>
-                    <a href="#kegiatan" class="text-gray-600 hover:text-emerald-500 font-medium transition duration-300">Galeri Kegiatan</a>
-                </div>
-                <!-- Tombol CTA -->
-                <div class="hidden md:flex">
-                    <a href="#" class="bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-2 rounded-full font-semibold transition duration-300 shadow-md">Gabung Kami</a>
-                </div>
+               
+    
             </div>
         </div>
     </nav>
@@ -45,15 +52,15 @@
     <!-- Hero Section -->
     <header class="bg-emerald-50 py-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold text-emerald-900 mb-6 leading-tight">
-                Membangun Generasi <br> <span class="text-emerald-500">Peduli Lingkungan</span>
-            </h1>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight
+           text-transparent bg-clip-text bg-gradient-to-r from-emerald-900 via-emerald-100 to-emerald-900
+           bg-[length:200%_auto] animate-text-shimmer">
+    Kelompok Studi Ekologi <br> <span class="text-emerald-500">KSE UIN RADEN INTAN</span>
+</h1>
             <p class="text-lg text-emerald-700 mb-10 max-w-2xl mx-auto">
-                Kami adalah wadah bagi para pemuda yang ingin berkontribusi nyata dalam menjaga kelestarian alam dan memberdayakan masyarakat.
+                Salam lestari Salam Ekologi.
             </p>
-            <a href="#tentang" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300 shadow-lg">
-                Pelajari Lebih Lanjut
-            </a>
+           
         </div>
         <!-- Dekorasi Background -->
         <div class="absolute top-0 left-0 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -68,13 +75,16 @@
             </div>
             <div class="md:w-1/2">
                 <span class="text-emerald-500 font-semibold tracking-wider uppercase text-sm">Siapa Kami</span>
-                <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6">Penjelasan Organisasi</h2>
-                <p class="text-gray-600 mb-4 leading-relaxed">
-                    Nusantara Hijau didirikan dengan visi untuk menciptakan harmoni antara manusia dan alam. Kami berfokus pada edukasi lingkungan, aksi bersih-bersih massal, dan penanaman pohon di area kritis.
+                <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6"> BIOGRAFI</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed text-justify">
+                   BIOGRAFI UKM KELOMPOK STUDI EKOLOGI (KSE) UIN RADEN INTAN LAMPUNG
+
+Unit Kegiatan Mahasiswa (UKM) Kelompok Studi Ekologi (KSE) UIN Raden Intan Lampung merupakan organisasi kemahasiswaan yang bergerak di bidang lingkungan hidup dan konservasi sumber daya alam. UKM KSE berdiri pada 29 September 2018 sebagai wadah bagi mahasiswa yang memiliki kepedulian terhadap lingkungan serta mendukung terwujudnya UIN Raden Intan Lampung sebagai kampus berwawasan lingkungan
+                <p class="text-gray-600 leading-relaxed text-justify">
+              
+Sejak berdiri, UKM KSE aktif melaksanakan berbagai kegiatan, seperti pembangunan arboretum bersama BPDASHL WSS melalui penanaman 1.000 bibit pohon, penyebaran benih ikan di Embung FEBI UIN Raden Intan Lampung, penanaman 1.000 bibit mangrove, pengolahan limbah organik dan anorganik menjadi produk bernilai guna, konservasi sumber daya alam, serta kampanye edukasi lingkungan kepada masyarakat. Selain itu, UKM KSE juga dipercaya menjadi delegasi UIN Raden Intan Lampung pada National Student Leaders on Sustainability Meeting (NSLSM) UI GreenMetric tahun 2022 dan 2023 sebagai bentuk dukungan terhadap program kampus hijau
                 </p>
-                <p class="text-gray-600 leading-relaxed">
-                    Katalog ini menyajikan berbagai program yang telah kami jalankan. Kami percaya bahwa langkah kecil yang dilakukan bersama-sama akan membawa perubahan besar bagi bumi kita.
-                </p>
+               
             </div>
         </div>
     </section>
@@ -83,7 +93,7 @@
     <section id="kegiatan" class="py-20 bg-emerald-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Galeri & Katalog Kegiatan</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Galeri & Kegiatan</h2>
                 <p class="text-emerald-700 max-w-2xl mx-auto">Dokumentasi aksi nyata kami di lapangan bersama para relawan dan masyarakat.</p>
             </div>
 
@@ -91,7 +101,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Kartu 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
-                    <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80fbea5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kegiatan 1" class="w-full h-56 object-cover">
+                    <img src="images/kegiatan1.jpeg" alt="" alt="Kegiatan 1" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Penanaman 1000 Pohon</h3>
                         <p class="text-gray-600 text-sm">Program reboisasi hutan yang dilakukan di lereng Gunung Salak bersama warga lokal.</p>
@@ -100,7 +110,7 @@
 
                 <!-- Kartu 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
-                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kegiatan 2" class="w-full h-56 object-cover">
+                    <img src="images/kegiatan2.jpeg" alt="Kegiatan 2" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Edukasi Sampah Plastik</h3>
                         <p class="text-gray-600 text-sm">Penyuluhan ke sekolah-sekolah tentang pentingnya mengurangi dan mendaur ulang plastik.</p>
@@ -111,7 +121,7 @@
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
                     <img src="https://images.unsplash.com/photo-1583314279764-500b40ebff9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kegiatan 3" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Aksi Bersih Pantai</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Kegiatan 3</h3>
                         <p class="text-gray-600 text-sm">Pembersihan pesisir pantai dari sampah kiriman, melibatkan lebih dari 200 relawan aktif.</p>
                     </div>
                 </div>
@@ -121,7 +131,7 @@
 
     <!-- Footer -->
     <footer class="bg-emerald-900 text-emerald-100 py-10 text-center">
-        <p>&copy; 2026 Organisasi Nusantara Hijau. Semua Hak Dilindungi.</p>
+        <p>&copy; 2026 KSE UIN Raden Intan Lampung.</p>
     </footer>
 
 </body>
